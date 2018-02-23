@@ -55,7 +55,7 @@ class PostController extends Controller
         //IMAGE
         if ($request->file('file')) {
             $path = Storage::disk('public')->put('image', $request->file('file'));
-            $post->fill(['file' => asset($path)])->save();
+            $post->fill(['file' => asset('public/' . $path)])->save();
         }
 
         //TAGS
@@ -112,7 +112,7 @@ class PostController extends Controller
         //IMAGE
         if ($request->file('file')) {
             $path = Storage::disk('public')->put('image', $request->file('file'));
-            $post->fill(['file' => asset($path)])->save();
+            $post->fill(['file' => asset('public/' . $path)])->save();
         }
 
         //TAGS

@@ -45,9 +45,9 @@
 </div>
 
 @section('scripts')
-    <script src="{{asset('vendor/speakingURL/speakingurl.min.js')}}"></script>
-    <script src="{{asset('vendor/stringToSlug/jquery.stringtoslug.min.js')}}"></script>
-    <script src="{{asset('vendor/ckeditor/ckeditor.js')}}"></script>
+    <script src="{{asset('public/vendor/speakingURL/speakingurl.min.js')}}"></script>
+    <script src="{{asset('public/vendor/stringToSlug/jquery.stringtoslug.min.js')}}"></script>
+    <script src="{{asset('public/vendor/ckeditor/ckeditor.js')}}"></script>
     <script>
         $(document).ready(function () {
             $("#name, #slug").stringToSlug({
